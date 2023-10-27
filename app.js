@@ -11,6 +11,23 @@ app.get("/meunome", (req, res) => res.type('html').send(meunome));
 
 app.get("/tico", (req, res) => res.type('html').send(teco));
 
+app.get("/pokemons", (req, res) => {
+  res.json([
+    Pikachu,
+    Butterfree, 
+    Pidgeot, 
+    Bulbasaur, 
+    Charizard, 
+    Squirtle, 
+    Kingler, 
+    Primeape, 
+    Muk,
+    Tauros,
+    Lapras,
+    Snorlax
+  ]);
+});
+
 app.get('/req', (req, res) => {
     console.log("Just got a request!")
     res.send('Yo!')
