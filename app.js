@@ -28,6 +28,14 @@ app.get("/pokemons", (req, res) => {
   ]);
 });
 
+app.post("/series", (req, res) => {
+  res.json([
+    "Lupin",
+    "Ponto Cego", 
+    "Peaky Blinders", 
+  ]);
+});
+
 app.get('/req', (req, res) => {
     console.log("Just got a request!")
     res.send('Yo!')
