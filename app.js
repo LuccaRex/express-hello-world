@@ -13,18 +13,18 @@ app.get("/tico", (req, res) => res.type('html').send(teco));
 
 app.get("/pokemons", (req, res) => {
   res.json([
-    Pikachu,
-    Butterfree, 
-    Pidgeot, 
-    Bulbasaur, 
-    Charizard, 
-    Squirtle, 
-    Kingler, 
-    Primeape, 
-    Muk,
-    Tauros,
-    Lapras,
-    Snorlax
+    "Pikachu",
+    "Butterfree", 
+    "Pidgeot", 
+    "Bulbasaur", 
+    "Charizard", 
+    "Squirtle", 
+    "Kingler", 
+    "Primeape", 
+    "Muk",
+    "Tauros",
+    "Lapras",
+    "Snorlax"
   ]);
 });
 
